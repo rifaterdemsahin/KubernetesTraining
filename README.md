@@ -18,6 +18,7 @@
 - 💰 Price: call for price
 
 ## 3. 👨‍💻 Kubernetes Expert (Advanced)
+- ⚙️ Environment : Pilot
 - 📝 Custom resource definitions
 - 🤖 Operators and custom controllers
 - 🎯 Customization
