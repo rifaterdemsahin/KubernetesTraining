@@ -1,83 +1,81 @@
-Environment: Pilot
-Bu projeyi danışmanlık sürecine uygun hale getirip, 16 haftalık ve 8 haftalık zaman çizelgesi çıkararak organize edebiliriz. Bu plan, iki kişi için olacak ve her hafta belirli görevler tamamlanacak şekilde hazırlanmıştır. Ellerinde yapılacak görevlerle birlikte, hands-on egzersizler odaklıdır. İki kişi bu görevleri birlikte tamamlayacak şekilde çalışabilir.
+🚀 Environment: Pilot
+We can adapt this project to fit the consulting process and organize it with 16-week and 8-week timelines. This plan is designed for two people, with specific tasks to be completed each week. It focuses on hands-on exercises with assigned tasks. The two people can work together to complete these tasks.
 
-16 Haftalık Plan
-1. Hafta:
-Kubernetes Cluster Kurulumu:
-5 node'lu (1 Master + 4 Worker Node) Kubernetes cluster kurulumu.
-Kurulum dokümantasyonu ve konfigurasyonların kaydedilmesi.
-2. Hafta:
-Namespace’ler Oluşturulması:
-"test" ve "production" namespace'lerinin oluşturulması.
-3. Hafta:
-Rollerin Oluşturulması:
-Junior ve senior grupları için gerekli rollerin oluşturulması ve namespace’ler üzerindeki yetkilendirmelerinin yapılması.
-4. Hafta:
-Ingress Controller Kurulumu:
-Seçilen bir ingress controller’ın kurulumu ve konfigurasyonu (nginx, traefik, haproxy vb.).
-5. Hafta:
-Node Toleration ve Affinity Kurulumu:
-Production için sadece belirli node’larda pod’ların schedule edilmesi için node affiniy ve taint kuralları belirleme.
-6. Hafta:
-WordPress ve MySQL Deploymanı - Test Ortamı:
-WordPress ve MySQL'in test namespace'inde deploy edilmesi, servis ve persistent volume tanımları.
-7. Hafta:
-WordPress ve MySQL Deploymanı - Production Ortamı:
-Production namespace'inde WordPress ve MySQL deploymanlarının yapılması.
-8. Hafta:
-Ingress Tanımları:
-Test ve production ortamlarındaki WordPress uygulamaları için ingress tanımlarının yapılması (testblog.example.com, companyblog.example.com).
-9. Hafta:
-Deployment Konfigürasyonu:
-"ozgurozturknet/k8s:v1" deployment'ının production ortamına kurulması ve probe’ların eklenmesi.
-10. Hafta:
-Load Balancer Kurulumu:
-Deployment için load balancer tipi bir servis ile dış dünyaya erişim sağlanması.
-11. Hafta:
-Deployment Scale ve Güncelleme İşlemleri:
-Deployment replikalarının önce 3’e indirilmesi, ardından 10’a çıkarılması ve v2 imajıyla güncellenmesi.
-12. Hafta:
-Fluentd DaemonSet Deploymanı:
-Fluentd uygulamasının bir daemonset olarak cluster'a deploy edilmesi.
-13. Hafta:
-MongoDB StatefulSet Deploymanı:
-2 node'lu MongoDB cluster’ının statefulset olarak deploy edilmesi ve çalıştığının doğrulanması.
-14. Hafta:
-Service Account ve Pod İlişkilendirilmesi:
-Okuma ve listeleme yetkilerine sahip bir service account oluşturulması ve bu account’a bağlı bir pod deploy edilmesi. Pod üzerinden cluster'daki pod'ların listelenmesi.
-15. Hafta:
-Pod Tahliye ve Node İzolasyonu:
-Bir worker node üzerindeki tüm podların tahliye edilmesi ve bu node’a yeni podların schedule edilememesinin sağlanması.
-16. Hafta:
-Sonuçlandırma ve İnceleme:
-Tüm sürecin gözden geçirilmesi, eksikliklerin düzeltilmesi ve projenin tamamlanması.
+📅 16-Week Plan
+Week 1:
+🔧 Kubernetes Cluster Setup:
+- 5-node (1 Master + 4 Worker Nodes) Kubernetes cluster setup.
+- Documentation of installation and configuration settings.
+Week 2:
+🏷️ Creating Namespaces:
+- Creation of "test" and "production" namespaces.
+Week 3:
+👥 Creating Roles:
+- Creating necessary roles for junior and senior groups and configuring permissions on namespaces.
+Week 4:
+🌐 Ingress Controller Setup:
+- Installation and configuration of a chosen ingress controller (nginx, traefik, haproxy etc.).
+Week 5:
+🎯 Node Toleration and Affinity Setup:
+- Setting node affinity and taint rules to schedule pods only on specific nodes for production.
+Week 6:
+💻 WordPress and MySQL Deployment - Test Environment:
+- Deploying WordPress and MySQL in test namespace, defining services and persistent volumes.
+Week 7:
+🚀 WordPress and MySQL Deployment - Production Environment:
+- Deploying WordPress and MySQL in production namespace.
+Week 8:
+🔄 Ingress Definitions:
+- Creating ingress definitions for WordPress applications in test and production environments (testblog.example.com, companyblog.example.com).
+Week 9:
+⚙️ Deployment Configuration:
+- Installing "ozgurozturknet/k8s:v1" deployment in production environment and adding probes.
+Week 10:
+⚖️ Load Balancer Setup:
+- Providing external access through a load balancer type service for the deployment.
+Week 11:
+📈 Deployment Scale and Update Operations:
+- First reducing deployment replicas to 3, then increasing to 10 and updating with v2 image.
+Week 12:
+📝 Fluentd DaemonSet Deployment:
+- Deploying Fluentd application as a daemonset to the cluster.
+Week 13:
+🗄️ MongoDB StatefulSet Deployment:
+- Deploying a 2-node MongoDB cluster as statefulset and verifying its operation.
+Week 14:
+🔑 Service Account and Pod Association:
+- Creating a service account with read and list permissions and deploying a pod linked to this account. Listing cluster pods from within the pod.
+Week 15:
+🔄 Pod Evacuation and Node Isolation:
+- Evacuating all pods from a worker node and preventing new pods from being scheduled on this node.
+Week 16:
+✅ Finalization and Review:
+- Reviewing the entire process, fixing any deficiencies, and completing the project.
 
-8 Haftalık Hızlandırılmış Plan
-1. Hafta:
-Kubernetes Cluster Kurulumu ve Namespace’ler:
-5 node'lu cluster kurulumu ve "test" ve "production" namespace'lerinin oluşturulması.
-2. Hafta:
-Roller ve Yetkilendirme:
-Junior ve senior grupları için rollerin oluşturulması ve namespace yetkilerinin yapılandırılması.
-3. Hafta:
-Ingress Controller Kurulumu ve Node Affinity:
-Ingress controller kurulumu ve node affinity ile production için özel node belirlenmesi.
-4. Hafta:
-WordPress ve MySQL Deploymanı:
-Hem test hem production namespace’lerinde WordPress ve MySQL deploy edilmesi, persistent volume ve servis konfigürasyonlarının yapılması.
-5. Hafta:
-Ingress ve Uygulama Tanımlamaları:
-Ingress kurulumlarının yapılması (testblog.example.com, companyblog.example.com) ve resource limitlerin belirlenmesi.
-6. Hafta:
-Production Deployment:
-"ozgurozturknet/k8s:v1" deployment'ının kurulması, probe’ların eklenmesi ve load balancer’ın tanımlanması.
-7. Hafta:
-Scale ve Güncelleme İşlemleri:
-Deployment replikalarının azaltılıp artırılması ve imaj güncellemelerinin yapılması. Fluentd daemonset deploy edilmesi.
-8. Hafta:
-MongoDB Cluster ve Service Account:
-MongoDB statefulset ve service account deploy edilmesi, pod tahliyesi ve node izolasyonu işlemlerinin tamamlanması.
+⚡ 8-Week Accelerated Plan
+Week 1:
+🔧 Kubernetes Cluster Setup and Namespaces:
+- 5-node cluster setup and creation of "test" and "production" namespaces.
+Week 2:
+👥 Roles and Authorization:
+- Creating roles for junior and senior groups and configuring namespace permissions.
+Week 3:
+🌐 Ingress Controller Setup and Node Affinity:
+- Installing ingress controller and setting up node affinity for production-specific nodes.
+Week 4:
+💻 WordPress and MySQL Deployment:
+- Deploying WordPress and MySQL in both test and production namespaces, configuring persistent volumes and services.
+Week 5:
+🔄 Ingress and Application Definitions:
+- Setting up ingress configurations (testblog.example.com, companyblog.example.com) and defining resource limits.
+Week 6:
+🚀 Production Deployment:
+- Installing "ozgurozturknet/k8s:v1" deployment, adding probes, and configuring load balancer.
+Week 7:
+📈 Scale and Update Operations:
+- Decreasing and increasing deployment replicas and performing image updates. Deploying Fluentd daemonset.
+Week 8:
+🗄️ MongoDB Cluster and Service Account:
+- Deploying MongoDB statefulset and service account, completing pod evacuation and node isolation operations.
 
-Bu plan, hands-on egzersizlerle iki kişilik bir ekip için organize edilmiştir ve belirli sürelerde tamamlanabilir.
-
-
+👥 This plan is organized for a two-person team with hands-on exercises and can be completed within the specified timeframes.

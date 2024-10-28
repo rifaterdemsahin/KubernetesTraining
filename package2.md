@@ -46,7 +46,7 @@ Day 9: Testing & Optimization
 - Performance optimization
 - Documentation of setup and configurations
 
-Day 10: Rancher Deployment (Optional)
+Day 10: Rancher Deployment (Optional, Customer Environment)
 - Set up Rancher environment
 - Deploy entire stack to Rancher
 - Verify functionality in Rancher environment
