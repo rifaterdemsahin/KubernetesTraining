@@ -27,3 +27,9 @@
 - 💰 Price: call for price
 
 📚 Each package includes hands-on labs, course materials, and certification preparation guidance. 📧 Contact us to enroll or learn more about our training programs.
+
+📍 Location: Remote or UK OnSite 🇬🇧
+📱 Phone: +447848024173 (Work)
+📧 Email: info@pexabo.com
+🔗 LinkedIn: linkedin.com/in/rifaterdemsahin
+🌐 Company Website: devops.engineering
