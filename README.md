@@ -5,16 +5,14 @@
 ## 1. 🌱 Kubernetes Fundamentals (Beginner)
 - 🐳 Introduction to containers and container orchestration
 - 🏗️ Kubernetes architecture and components
-- 🚀 Basic pod deployment and management
+- 🚀 Environment : Proof of Concept
 - 💻 Working with kubectl
 - ⏱️ Duration: 12 days
 - 💰 Price: call for price
 
 ## 2. 🔧 Kubernetes Administrator (Intermediate) 
-- ⚙️ Advanced cluster management
-- 🔒 Security and RBAC
-- 💾 Storage and persistent volumes
-- 🌐 Networking and services
+- ⚙️ Environment : Prototype
+- 🔒 End to end implementation
 - 📊 Monitoring and logging
 - ⏱️ Duration: 10 days
 - 💰 Price: call for price
@@ -22,11 +20,9 @@
 ## 3. 👨‍💻 Kubernetes Expert (Advanced)
 - 📝 Custom resource definitions
 - 🤖 Operators and custom controllers
-- 🎯 Advanced scheduling
-- 🌍 Multi-cluster management
+- 🎯 Customization
 - ⚡ CI/CD integration
-- 🚀 Performance optimization
-- ⏱️ Duration: 5 days
+- ⏱️ Duration: 16-32 days
 - 💰 Price: call for price
 
 📚 Each package includes hands-on labs, course materials, and certification preparation guidance. 📧 Contact us to enroll or learn more about our training programs.
